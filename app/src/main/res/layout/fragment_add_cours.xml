@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCours"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/nomC"
+       android:hint="Enter nom Cours"
+       />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/nbH"
+       android:layout_below="@id/nomC"
+       android:hint="Enter enter nombre d'heures"
+
+       />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Choisir Type"
+       android:layout_below="@id/nbH"
+       android:id="@+id/txtv" />
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/nbH"
+       android:layout_toRightOf="@id/txtv"
+       android:id="@+id/rdg"
+       >
+
+      <RadioButton
+          android:id="@+id/cours"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cours" />
+
+      <RadioButton
+          android:id="@+id/atelier"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Atelier" />
+   </RadioGroup>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Enseignant"
+       android:layout_below="@id/rdg"
+       android:id="@+id/ensg" />
+
+   <Spinner
+       android:layout_toRightOf="@id/ensg"
+       android:id="@+id/spinner"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/ensg" />
+
+   <!-- Green Button -->
+   <Button
+       android:id="@+id/btnGreen"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="ajouter cours"
+       android:backgroundTint="@color/green"
+       android:textColor="@android:color/white"
+       android:layout_below="@id/spinner"
+       android:layout_marginTop="16dp" />
+
+   <!-- Red Button -->
+   <Button
+       android:id="@+id/btnRed"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Lister cours"
+       android:backgroundTint="@color/blue"
+       android:textColor="@android:color/white"
+       android:layout_below="@id/btnGreen"
+       android:layout_marginTop="8dp" />
+
+</RelativeLayout>

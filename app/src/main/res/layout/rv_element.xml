@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".AddCours"
+    >
+
+    <!-- Header Text -->
+    <TextView
+        android:id="@+id/typeCours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atelier"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Number of Hours -->
+
+    <TextView
+        android:id="@+id/titreCours"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/typeCours"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@id/typeCours"
+        android:text="atelier developpement mobile"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelNbHeure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Heure"
+        android:layout_below="@id/typeCours"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/nbHeure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/typeCours"
+        android:layout_toEndOf="@id/labelNbHeure"
+        android:inputType="numberDecimal"
+        android:layout_marginStart="16dp"
+        android:text="3.0"
+        android:layout_marginTop="8dp" />
+
+    <!-- Teacher -->
+    <TextView
+        android:id="@+id/labelEnseignant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enseignant"
+        android:layout_below="@id/nbHeure"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/enseignantSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nbHeure"
+        android:layout_toEndOf="@id/labelEnseignant"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enseignantSpinner"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDIT"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">tp72</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="liste_enseignants">liste enseignants</string>
+    <string name="open_drawer">open</string>
+    <string name="close_drawer">close</string>
+</resources>

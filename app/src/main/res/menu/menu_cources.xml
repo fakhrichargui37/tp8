@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_add"
+        android:title="Ajouter"
+        android:icon="@drawable/add"
+         />
+    <item
+        android:id="@+id/action_search"
+        android:title="Rechercher"
+        android:icon="@drawable/search"
+         />
+    <item
+        android:id="@+id/action_list_all"
+        android:title="Lister Tous"
+        android:icon="@drawable/list"
+  />
+    <item
+        android:id="@+id/action_clear_list"
+        android:title="Vider Liste"
+        android:icon="@drawable/ic__delete"
+       />
+</menu>

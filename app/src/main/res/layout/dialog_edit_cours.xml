@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hours"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Teacher" />
+</LinearLayout>
